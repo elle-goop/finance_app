@@ -4,4 +4,5 @@ Flutter app based on .sketch file from [https://dribbble.com/shots/4899939-Finan
 
 ---------
 Screen capture
+
 ![](images/Large&#32;GIF&#32;(312x544).gif)
