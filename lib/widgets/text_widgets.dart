@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/theme.dart';
 
-enum PriceStateColor {
-  green, red, purple
-}
+enum PriceStateColor { green, red, purple }
 
 class TextWithPrice extends StatelessWidget {
   TextWithPrice({this.text, this.price, this.color: PriceStateColor.purple});
@@ -23,7 +21,8 @@ class TextWithPrice extends StatelessWidget {
             fontSize: 19,
             fontFamily: 'JosefinSans',
             fontWeight: FontWeight.bold,
-          ),),
+          ),
+        ),
         Padding(
           padding: EdgeInsets.only(top: 5),
           child: Text(
@@ -31,7 +30,8 @@ class TextWithPrice extends StatelessWidget {
             style: TextStyle(
               color: colorPrice(color),
               fontSize: 34,
-            ),),
+            ),
+          ),
         ),
       ],
     );
@@ -48,6 +48,8 @@ class TextWithPrice extends StatelessWidget {
       case PriceStateColor.purple:
         return Palette.mainBlue;
         break;
+      default:
+        return Palette.mainBlue;
     }
   }
 }

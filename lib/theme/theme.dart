@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-ThemeData AppTheme = ThemeData(
+ThemeData appTheme = ThemeData(
   brightness: Brightness.light,
   primarySwatch: Colors.blue,
   primaryColor: Palette.mainGrey,
@@ -10,11 +10,6 @@ ThemeData AppTheme = ThemeData(
   scaffoldBackgroundColor: Palette.white,
   iconTheme: IconThemeData(
     color: Palette.mainGrey,
-    // size: 19.0,
-  ),
-  textTheme: TextTheme(
-    body1: TextStyle(),
-    body2: TextStyle(),
   ),
 );
 
@@ -34,7 +29,7 @@ class Palette {
   static const Color greyLight = Color.fromRGBO(216, 216, 216, 1);
 
   static const Color mainGrey = Color.fromRGBO(75, 88, 102, 1);
-  static const Map<int, Color> grey = const <int,Color> {
+  static const Map<int, Color> grey = const <int, Color>{
     100: Color.fromRGBO(75, 88, 102, 0.12),
     200: Color.fromRGBO(75, 88, 102, 0.22),
     300: Color.fromRGBO(75, 88, 102, 0.32),
@@ -43,22 +38,4 @@ class Palette {
     700: Color.fromRGBO(75, 88, 102, 0.72),
     900: Color.fromRGBO(75, 88, 102, 0.9),
   };
-
-
-  // static const Map<int, Color> yellow = const <int,Color> {
-  //   50: const Color(/* some hex code */),
-  //   100: const Color(/* some hex code */),
-  //   200: const Color(/* some hex code */),
-  //   300: const Color(/* some hex code */),
-  //   400: const Color(/* some hex code */),
-  //   500: const Color(/* some hex code */),
-  //   600: const Color(/* some hex code */),
-  //   700: const Color(/* some hex code */),
-  //   800: const Color(/* some hex code */),
-  //   900: const Color(/* some hex code */),
-  // };
-
-
 }
-
-

@@ -15,8 +15,6 @@ class FloatPaymentBtn extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 15, vertical: 12),
           height: 50.0,
           decoration: BoxDecoration(
-            // color: Palette.mainRed,
-            // borderRadius: BorderRadius.circular(5),
             boxShadow: [
               BoxShadow(
                 color: Palette.mainRedT,
@@ -25,27 +23,24 @@ class FloatPaymentBtn extends StatelessWidget {
               ),
             ],
           ),
-        child: Row(
-          children: <Widget>[
-
-            Expanded(
-              child: Text(
-                'Make Payment',
-                style: TextStyle(
-                  color: Palette.white,
-                  fontSize: 16,
-                  fontFamily: 'JosefinSans',
-                  fontWeight: FontWeight.w200)),
-            ),
-
-            Text(
-              '\$',
-              style: TextStyle(
-                color: Palette.white,
-                fontSize: 16,
-                fontFamily: 'JosefinSans',
-                fontWeight: FontWeight.w200)),
-          ],),
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Text('Make Payment',
+                    style: TextStyle(
+                        color: Palette.white,
+                        fontSize: 16,
+                        fontFamily: 'JosefinSans',
+                        fontWeight: FontWeight.w200)),
+              ),
+              Text('\$',
+                  style: TextStyle(
+                      color: Palette.white,
+                      fontSize: 16,
+                      fontFamily: 'JosefinSans',
+                      fontWeight: FontWeight.w200)),
+            ],
+          ),
         ),
       ),
     );
